@@ -1,0 +1,5 @@
+    .linear-grad-to-bottom-right{
+        -fx-background-color: linear-gradient(to bottom right, #ff7f50, #6a5acd);
+    }
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="linear-grad-to-bottom-right" stylesheets="@style/brackgroundAll.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bancovirtual.HelloController">
+         <Button layoutX="24.0" layoutY="339.0" mnemonicParsing="false" onAction="#mainScene" onMouseClicked="#mainScene" prefHeight="27.0" prefWidth="67.0" styleClass="dark-blue" stylesheets="@style/buttonStyle.css" text="Back" />
+      <Label layoutX="24.0" layoutY="14.0" text="Nova conta">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tUser" layoutX="24.0" layoutY="110.0" promptText="Usuário" />
+      <PasswordField fx:id="tPassword" layoutX="24.0" layoutY="181.0" promptText="Senha" />
+      <Button layoutX="25.0" layoutY="230.0" mnemonicParsing="false" onAction="#creatUser" onMouseClicked="#mainScene" styleClass="dark-blue" stylesheets="@style/buttonStyle.css" text="Criar" />
+      <Label layoutX="24.0" layoutY="71.0" text="Insira seus dados:">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="300.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@image/account.png" />
+      </ImageView>
+   <PasswordField fx:id="numAccount" layoutX="24.0" layoutY="145.0" promptText="Numero da conta" />
+   <Label fx:id="lblStatus" layoutX="50.0" layoutY="290.0" prefHeight="25.0" prefWidth="212.0">
+      <font>
+         <Font name="System Bold Italic" size="16.0" />
+      </font>
+   </Label>
+</AnchorPane>
