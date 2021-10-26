@@ -6,7 +6,6 @@ public abstract class BaseAccount {
     private final String accountType;
 
     protected BaseAccount(String number, String accountType) {
-
         this.number = number;
         this.accountType = accountType;
     }
